@@ -23,10 +23,11 @@ public class Player : MonoBehaviour
         PlayerBounds();
 
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space) )
+        if (Input.GetKeyDown(KeyCode.Space) /* || Input.GetKeyUp(KeyCode.Space)*/ )
         {
             Shoot();
         }
+        
     }
 
     private void PlayerBounds()

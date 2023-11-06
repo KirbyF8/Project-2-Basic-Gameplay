@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Compression;
 using UnityEngine;
 
 public class Proyectil : MonoBehaviour
@@ -30,6 +31,7 @@ public class Proyectil : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("You Losed");
+            Time.timeScale = 0;
         }
 
     }
